@@ -1,3 +1,5 @@
+[![codecov](https://codecov.io/gh/upcs/cs-341-project-sq19-delta/branch/master/graph/badge.svg)](https://codecov.io/gh/upcs/cs-341-project-sq19-delta)
+
 # cs-341-project-sq19-delta
 cs-341-project-sq19-delta created by GitHub Classroom
 
