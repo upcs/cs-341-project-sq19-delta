@@ -28,6 +28,9 @@
     "collectCoverage": true
   },
   "dependencies": {
-    "codecov": "^3.1.0"
+    "codecov": "^3.1.0",
+    "jest": "^23.6.0",
+    "jscoverage": "^0.6.0",
+    "nodeunit": "^0.11.3"
   }
 }
