@@ -4,8 +4,7 @@
   "description": "CS 341 Project - Team Delta",
   "main": "index.js",
   "scripts": {
-    "test": "tap tests/*.js --coverage",
-    "codecov": "tap --coverage-report=text-lcov && codecov"
+    "test": "jest && codecov"
   },
   "repository": {
     "type": "git",
@@ -32,6 +31,8 @@
   "dependencies": {
     "jscoverage": "^0.6.0",
     "nodeunit": "^0.11.3",
-    "tap": "^12.5.1"
+    "tap": "^12.5.1",
+    "jest": "^23.6.0",
+    "codecov": "^3.1.0"
   }
 }
