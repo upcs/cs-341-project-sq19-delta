@@ -1,4 +1,4 @@
-[![Codecov Coverage](https://img.shields.io/codecov/c/github/ghupcs/cs-341-project-sq19-delta/master.svg?style=flat-square)](https://codecov.io/ghupcs/cs-341-project-sq19-delta/)
+[![Codecov Coverage](https://img.shields.io/codecov/c/github/ghupcs/cs-341-project-sq19-delta/master.svg?style=flat-square)](https://codecov.io/gh/upcs/cs-341-project-sq19-delta)
 
 # cs-341-project-sq19-delta
 cs-341-project-sq19-delta created by GitHub Classroom
