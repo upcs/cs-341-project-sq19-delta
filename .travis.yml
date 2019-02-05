@@ -3,3 +3,4 @@ language:
 install:
   - npm install -g codecov
   - npm install -g tap
+  - npm install -g jest
