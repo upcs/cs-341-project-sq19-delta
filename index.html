@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -5,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/loadTable.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"/></script>
     <title>Team Delta</title>
 </head>
 
@@ -16,6 +20,96 @@
     <p>
         Andrew Lang, Alex Weininger, Daniel Borg, Niraj Mali
     </p>
+
+    <input class="loadData" type="button" id="loadData" name="loadData" value="Load Data" onclick="javascript:loadTable()">
+
+    <table>
+        <tr>
+            <th>OBJECTID</th>
+
+            <th>BLDG_ID</th>
+
+            <th>STATE_ID</th>
+ 
+            <th>BLDG_NUMB</th>
+ 
+            <th>BLDG_STAT</th>
+  
+            <th>BLDG_NAME</th>
+ 
+            <th>BLDG_ADDR</th>
+        
+            <th>BLDG_TYPE</th>
+         
+            <th>BLDG_USE</th>
+       
+            <th>BLDG_SQFT</th>
+
+            <th>SQFT_SRC</th>
+          
+            <th>NUM_STORY</th>
+       
+            <th>STORY_SRC</th>
+      
+            <th>UNITS_RES</th>
+       
+            <th>UNITS_SRC</th>
+           
+            <th>OCCUP_CAP</th>
+
+            <th>OCCUP_SRC</th>
+        
+            <th>ADA_ACCESS</th>
+       
+            <th>YEAR_BUILT</th>
+        
+            <th>STRUC_TYPE</th>
+       
+            <th>STRUC_COND</th>
+      
+            <th>SOURCE</th>
+        
+            <th>SOURCE_REF</th>
+           
+            <th>AVG_HEIGHT</th>
+       
+            <th>MAX_HEIGHT</th>
+           
+            <th>MIN_HEIGHT</th>
+          
+            <th>HEIGHT_SRC</th>
+    
+            <th>SURF_ELEV</th>
+       
+            <th>SURF_OFF</th>
+     
+            <th>SURF_ADJ</th>
+  
+            <th>SURF_SRC</th>
+         
+            <th>ROOF_ELEV</th>
+         
+            <th>ROOF_TYPE</th>
+      
+            <th>ORIENT</th>
+            
+            <th>VOLUME</th>
+        
+            <th>Shape_Length</th>
+         
+            <th>Shape_Area</th>
+          
+            <th>PROPKEY</th>
+          
+            <th>EDIT_STAT</th>
+          
+            <th>DATA_SOURCE</th>
+     
+            <th>RETIRED_BY</th>
+      
+            <th>RETIRED_DATE</th>
+        </tr>
+    </table>
 </body>
 
 </html>
