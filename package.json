@@ -4,7 +4,8 @@
   "description": "CS 341 Project - Team Delta",
   "main": "index.js",
   "scripts": {
-    "test": "jest && codecov"
+    "test": "jest && codecov",
+    "start": "node ./js/server.js"
   },
   "repository": {
     "type": "git",
