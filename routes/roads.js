@@ -18,10 +18,10 @@ router.post('/', async function (req, res, next) {
 		if (err) throw err;
 		let sql = `SELECT * FROM STREET WHERE STREETNAME = '${name}' LIMIT 5`;
 		con.query(sql, function (err, result) {
-			// if (err) {
-			// 	console.log("Road not found");
-			// 	return;
-			// } else {
+			if (err) {
+				console.log("Road not found");
+				return;
+			} else {
 				let obj = [];
 				Object.keys(result).forEach(function (key) {
 					let rowObj = {};
@@ -33,7 +33,7 @@ router.post('/', async function (req, res, next) {
 					obj.push(rowObj);
 				});
 				res.send(obj);
-			// }
+			}
 		});
 	});
 });
