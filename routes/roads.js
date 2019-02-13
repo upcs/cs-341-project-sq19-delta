@@ -14,7 +14,7 @@ router.post('/', async function (req, res, next) {
 		database: "CS341"
 	});
 
-	let r = await con.connect(function (err) {
+	con.connect(function (err) {
 		if (err) throw err;
 		let sql = `SELECT * FROM STREET WHERE STREETNAME = '${name}' LIMIT 5`;
 		con.query(sql, function (err, result) {
