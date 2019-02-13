@@ -34,11 +34,23 @@
                     <input id="street-name" type="text" class="form-control" placeholder="Street name" aria-label="Street name"
                         aria-describedby="button-addon2">
                     <div class="input-group-append">
-                        <button class="btn btn-outline-secondary" type="button" id="search-button">Search</button>
+                        <button class="btn btn-outline-secondary" type="button" id="search-button" onclick="search()">Search</button>
                     </div>
                 </div>
             </form>
         </div>
     </div>
     <script src="./js/searchForm.js"></script>
+    <script>
+        function search() {
+            if (document !== null && document.getElementById('street-name') !== null) {
+
+                let name = document.getElementById('street-name').value;
+                let results = getRoad(name);
+                console.log(results);
+            } else {
+                console.log('error');
+            }
+        }
+    </script>
 </body>
