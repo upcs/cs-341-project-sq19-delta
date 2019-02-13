@@ -6,3 +6,7 @@ install:
   - npm install -g codecov
   - npm install -g tap
   - npm install -g jest
+  - npm install -g supertest
+  - npm install -g superagent
+  - npm install -g babel-preset-env
+  - npm install -g babel-cli
