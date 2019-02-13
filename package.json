@@ -27,8 +27,7 @@
   },
   "jest": {
     "coverageDirectory": "./coverage/",
-    "collectCoverage": true,
-    "setupFiles": ["./browserMock.js"]
+    "collectCoverage": true
   },
   "dependencies": {
     "jscoverage": "^0.6.0",

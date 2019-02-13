@@ -41,4 +41,16 @@
         </div>
     </div>
     <script src="./js/searchForm.js"></script>
+    <script>
+        function search() {
+            if (document !== null && document.getElementById('street-name') !== null) {
+
+                let name = document.getElementById('street-name').value;
+                let results = getRoad(name);
+                console.log(results);
+            } else {
+                console.log('error');
+            }
+        }
+    </script>
 </body>
