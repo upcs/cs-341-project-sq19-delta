@@ -11,6 +11,7 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="./css/searchform.css" />
     <title>Find Street</title>
+    <script src="./javascripts/index.js"></script>
 </head>
 
 <body>
@@ -40,17 +41,6 @@
             </form>
         </div>
     </div>
-    <script src="./js/searchForm.js"></script>
-    <script>
-        function search() {
-            if (document !== null && document.getElementById('street-name') !== null) {
 
-                let name = document.getElementById('street-name').value;
-                let results = getRoad(name);
-                console.log(results);
-            } else {
-                console.log('error');
-            }
-        }
-    </script>
+
 </body>
