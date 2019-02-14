@@ -3,6 +3,11 @@ body{
     background-size: cover;
 }
 
+#title{
+    text-decoration: none;
+    color: black;
+  }
+
 #mainRating{
     text-align: center
 }
