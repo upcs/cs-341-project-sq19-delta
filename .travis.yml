@@ -6,4 +6,7 @@ install:
   - npm install -g codecov
   - npm install -g tap
   - npm install -g jest
-  - npm install --save-dev babel-cli babel-preset-env jest supertest superagent
+  - npm install -g babel-cli
+  - npm install -g babel-preset-env
+  - npm install -g supertest
+  - npm install -g superagent
