@@ -30,12 +30,13 @@ router.post('/', jsonParser, function (req, res, next) {
 
 	con.connect(function (err) {
 		if (err) throw err;
-		let sql = `SELECT * FROM STREET WHERE STREETNAME = '${name}' LIMIT 1`;
+		let sql = `SELECT * FROM STREET WHERE STREETNAME = '${name}'`;
 		con.query(sql, function (err, result) {
 			if (err) {
 				console.log("Road not found");
 				return;
 			} else {
+				let roadList = [];
 				let obj = [];
 				Object.keys(result).forEach(function (key) {
 					let rowObj = {};
@@ -44,7 +45,10 @@ router.post('/', jsonParser, function (req, res, next) {
 						var col = row[keyc];
 						rowObj[keyc] = row[keyc];
 					});
-					obj.push(rowObj);
+					if (roadList.indexOf(rowObj['FULL_NAME']) == -1) {
+						roadList.push(rowObj['FULL_NAME']);
+						obj.push(rowObj);
+					}
 				});
 				res.send(obj);
 			}
