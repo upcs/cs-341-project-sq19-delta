@@ -12,6 +12,8 @@ coverage:
     project: yes
     patch: yes
     changes: no
+ignore:
+  - "./routes/roads.js"
 
 parsers:
   gcov:
