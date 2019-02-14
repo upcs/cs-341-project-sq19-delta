@@ -3,6 +3,10 @@ body{
   background-size: cover;
 }
 
+#reviewTitle{
+  background-color: cyan
+}
+
 .jumbotron{
   background-color: rgba(256, 256, 256, 0.6);
 }
