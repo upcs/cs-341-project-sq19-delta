@@ -11,3 +11,9 @@ body{
 #mainRating{
     text-align: center
 }
+
+#mainReview {
+    background-color: rgba(256, 256, 256, 0.8);
+    width: 100%;
+    margin-bottom: 10vh;
+  }
