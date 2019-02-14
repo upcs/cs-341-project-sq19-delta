@@ -1,3 +1,24 @@
-html{
-  background-color:lightblue 
+body{
+  background-image: url(../images/homePhoto.jfif);
+  background-size: cover;
+}
+
+#reviewTitle{
+  background-color: cyan
+}
+
+.jumbotron{
+  background-color: rgba(256, 256, 256, 0.6);
+}
+
+#streets{
+  background-color: rgba(256, 256, 256, 0.50)
+}
+
+#separator{
+  opacity: 0.0
+}
+
+#cardTitles{
+  color:  #0055ff
 }
