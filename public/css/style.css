@@ -3,5 +3,9 @@ body{
 }
 
 .jumbotron{
-  background-color: rgba(256, 256, 256, 0.75)
+  background-color: rgba(256, 256, 256, 0.50)
+}
+
+#streets{
+  background-color: rgba(256, 256, 256, 0.50)
 }
