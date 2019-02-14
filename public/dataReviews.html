@@ -2,9 +2,6 @@
 <html lang="en">
 
 <head>
-  <!-- My css -->
-  <link rel="stylesheet" href="./css/reviews.css"> <!-- Required meta tags -->
-  <link rel="stylesheet" href="./css/style.css">
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -13,6 +10,9 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css"
     integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
 
+  <!-- My css -->
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/reviews.css"> <!-- Required meta tags -->
   <link rel="shortcut icon" type="image/png" href="./images/RoadRaterLogo.png" />
   <title>Reviews</title>
 </head>
@@ -30,21 +30,48 @@
   <div class="container">
     <div class="jumbotron" id="mainReview">
       <div class="row justify-content-center">
-        <h3 class="display-4 justify-content-center">Road Name</h3>
+        <h3 class="display-3 justify-content-center">N GREELEY AVE</h3>
       </div>
+      <br><br>
       <div class="row">
         <div class="col-sm justify-content-left" id="mainRating">
-          <h3>Overall rating</h3>
-          <h1>5.9</h1>
+          <h1>Overall rating</h1>
+          <p class="display-4">4.9</p>
         </div>
         <div class="col">
-          <h3>Note about this road</h3>
-          <p>Smooth; Well-Kept</p>
+          <h1>Note about this road</h1>
+          <p id="tags">Smooth, Well-Kept</p>
         </div>
       </div>
     </div>
     <div>
 
+      <ul class="list-group">
+        <li class="list-group-item userReview">
+          <div class="row">
+            <div class="col-md-2 display-4">5.0</div>
+            <div class="col-md-8">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante
+              sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc
+              ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</div>
+            <div class="col-md-2 h3">
+              <h3 class="float-right">2/14/19</h3>
+              <p class="float-right">Daniel B.</p>
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item userReview">
+            <div class="row">
+              <div class="col-md-2 display-4">5.0</div>
+              <div class="col-md-8">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante
+                sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc
+                ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</div>
+              <div class="col-md-2 h3">
+                <h3 class="float-right">2/14/19</h3>
+                <p class="float-right">Daniel B.</p>
+              </div>
+            </div>
+          </li>
+      </ul>
 
       <!-- Optional JavaScript -->
       <!-- jQuery first, then Popper.js, then Bootstrap JS -->
