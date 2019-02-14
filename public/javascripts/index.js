@@ -40,6 +40,13 @@ function search() {
 				<div class="card-header">${(Math.random() * (i + 5)).toFixed(1)} miles away</div>
 					<div class="card-body">
 						<h5 class="card-title">${data[i]['FULL_NAME']} ${data[i]['LEFTZIP']}
+							<div style="padding: 5px 0px">
+								<div class="progress">
+  									<div class="progress-bar bg-danger" role="progressbar" style="width: 33.3%" aria-valuenow="33.3" aria-valuemin="0" aria-valuemax="100"></div>
+  									<div class="progress-bar bg-warning" role="progressbar" style="width: 33.3%" aria-valuenow="33.3" aria-valuemin="0" aria-valuemax="100"></div>
+  									<div class="progress-bar bg-success" role="progressbar" style="width: 33.4%" aria-valuenow="33.4" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+								</div>
 							<a href= "/dataReviews.html" class="btn btn-primary float-right" >Rate Road</a>
 						</h5>
 					</div>
