@@ -26,5 +26,9 @@ body{
 .userReview{
     background-color: rgba(256, 256, 256, 1.0);
     width: 100%;
-    padding-top: 5vh;
+    padding-top: 45px;
+}
+
+.userReview p {
+    font-size: 21px;
 }
