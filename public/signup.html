@@ -12,11 +12,51 @@
     <link rel="shortcut icon" type="image/png" href="./images/RoadRaterLogo.png" />
     <link rel="stylesheet" href="./css/style.css">
 
-    <title>Sign-Up</title>
+    <title>Sign-Up!</title>
 </head>
 
 <body>
-    <h1>Hello, world!</h1>
+    <div class="container h-100">
+        <div class="row justify-content-center">
+            <div class="col">
+                <div class="jumbotron" id="description">
+                    <form>
+                        <div class="form-row">
+                            <div class="col-md mb-3">
+                                <label for="validationDefault01">First name</label>
+                                <input type="text" class="form-control" id="validationDefault01"
+                                    placeholder="First name" value="First name" required>
+                            </div>
+
+                            <div class="col-md mb-3">
+                                <label for="validationDefault02">Last name</label>
+                                <input type="text" class="form-control" id="validationDefault02" placeholder="Last name"
+                                    value="Last name" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md mb-3">
+                                <label for="validationDefaultUsername">Username</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" id="validationDefaultUsername"
+                                        placeholder="Username" value="Username" aria-describedby="inputGroupPrepend2"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="col-md mb-3">
+                                <label for="validationPassword">Password</label>
+                                <input type="text" class="form-control" id="validationPassword" placeholder="Password"
+                                    value="Password" required>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <button class="btn btn-primary" type="submit">Sign-Up!</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
