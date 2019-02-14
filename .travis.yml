@@ -10,3 +10,4 @@ install:
   - npm install -g babel-preset-env
   - npm install supertest --save-dev
   - npm install -g superagent
+  - npm install -g nock

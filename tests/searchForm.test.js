@@ -1,5 +1,10 @@
 const request = require('supertest');
 const app = require('../app');
+const nock = require('nock');
+
+const scope = nock('http://localhost:3000/')
+	.post('/rods')
+	.reply('200', 'pass');
 
 jest.setTimeout(100000);
 
