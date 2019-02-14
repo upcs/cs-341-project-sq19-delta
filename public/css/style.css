@@ -10,3 +10,7 @@ body{
 #streets{
   background-color: rgba(256, 256, 256, 0.50)
 }
+
+#separator{
+  opacity: 0.0
+}
