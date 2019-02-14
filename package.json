@@ -34,6 +34,7 @@
     "collectCoverage": true
   },
   "dependencies": {
+    "body-parser": "^1.18.3",
     "codecov": "^3.1.0",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
