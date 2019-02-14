@@ -6,7 +6,6 @@ var logger = require('morgan');
 var bodyParser = require('body-parser');
 
 
-var usersRouter = require('./routes/users');
 var roadsRouter = require('./routes/roads');
 
 var app = express();
@@ -27,7 +26,6 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/users', usersRouter);
 app.use('/roads', roadsRouter);
 
 

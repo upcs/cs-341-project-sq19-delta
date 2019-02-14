@@ -12,14 +12,16 @@ var jsonParser = bodyParser.json();
 router.use(bodyParser.json());
 
 /* GET users listing. */
-router.post('/', jsonParser, function (req, res, next) {
+router.post('/', function (req, res, next) {
 	let name = 'Willamette';
 	console.log(req.originalUrl);
 	console.log(req.query.search);
 
-	res.send('ok');
 	if (req.query.search !== undefined) {
 		name = req.query.search;
+	} else {
+		res.send(200, 'ok');
+		return;
 	}
 
 	let con = mysql.createConnection({
@@ -30,28 +32,33 @@ router.post('/', jsonParser, function (req, res, next) {
 	});
 
 	con.connect(function (err) {
-		if (err) throw err;
-		let sql = `SELECT * FROM STREET WHERE STREETNAME = '${name}' LIMIT 1`;
-		con.query(sql, function (err, result) {
-			if (err) {
-				console.log("Road not found");
-				return;
-			} else {
-				let obj = [];
-				Object.keys(result).forEach(function (key) {
-					let rowObj = {};
-					var row = result[key];
-					Object.keys(row).forEach(function (keyc) {
-						var col = row[keyc];
-						rowObj[keyc] = row[keyc];
+		if (err) {
+			res.send(200, 'ok');
+			return;
+		} else {
+			let sql = `SELECT * FROM STREET WHERE STREETNAME = '${name}' LIMIT 1`;
+			con.query(sql, function (err, result) {
+				if (err) {
+					res.send(200, 'not found');
+					console.log("Road not found");
+					return;
+				} else {
+					let obj = [];
+					Object.keys(result).forEach(function (key) {
+						let rowObj = {};
+						var row = result[key];
+						Object.keys(row).forEach(function (keyc) {
+							var col = row[keyc];
+							rowObj[keyc] = row[keyc];
+						});
+						obj.push(rowObj);
 					});
-					obj.push(rowObj);
-				});
-				res.send(obj);
-			}
-		});
+					res.json(200, obj);
+				}
+			});
+		}
 	});
-	con.end();
+
 });
 
 module.exports = router;
