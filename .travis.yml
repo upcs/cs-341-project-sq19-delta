@@ -4,8 +4,8 @@ node_js:
   - lts/*
 services:
   - mysql
-before_script:
-  - npm start
+script:
+  - npm start && npm test
 install:
   - npm install -g codecov
   - npm install -g tap
