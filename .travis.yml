@@ -5,7 +5,7 @@ node_js:
 services:
   - mysql
 script:
-  - npm start && npm test
+  - node ./bin/www &
 install:
   - npm install -g codecov
   - npm install -g tap
