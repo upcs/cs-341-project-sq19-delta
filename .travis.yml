@@ -2,6 +2,10 @@ language:
   node_js
 node_js:
   - lts/*
+services:
+  - mysql
+before_script:
+  - node node ./bin/www &
 install:
   - npm install -g codecov
   - npm install -g tap
@@ -10,3 +14,4 @@ install:
   - npm install -g babel-preset-env
   - npm install supertest --save-dev
   - npm install -g superagent
+  - npm install -g nock

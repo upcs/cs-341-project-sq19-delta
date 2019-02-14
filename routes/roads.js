@@ -12,13 +12,16 @@ var jsonParser = bodyParser.json();
 router.use(bodyParser.json());
 
 /* GET users listing. */
-router.post('/', jsonParser, function (req, res, next) {
+router.post('/', function (req, res, next) {
 	let name = 'Willamette';
 	console.log(req.originalUrl);
 	console.log(req.query.search);
 
 	if (req.query.search !== undefined) {
 		name = req.query.search;
+	} else {
+		res.send(200, 'ok');
+		return;
 	}
 
 	let con = mysql.createConnection({
@@ -54,6 +57,7 @@ router.post('/', jsonParser, function (req, res, next) {
 			}
 		});
 	});
+
 });
 
 module.exports = router;
