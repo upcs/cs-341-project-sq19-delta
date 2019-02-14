@@ -1,6 +1,5 @@
 const request = require('supertest');
 const app = require('../app');
-const nock = require('nock');
 
 // jest.setTimeout(100000);
 

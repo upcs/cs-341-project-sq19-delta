@@ -4,8 +4,8 @@ node_js:
   - lts/*
 services:
   - mysql
-script:
-  - node ./bin/www &
+before_script:
+  - node node ./bin/www &
 install:
   - npm install -g codecov
   - npm install -g tap
