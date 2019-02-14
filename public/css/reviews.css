@@ -1,8 +1,34 @@
 body{
     background-image: url(../images/homePhoto.jfif);
     background-size: cover;
+    margin-bottom: 10vh;
 }
+
+#title{
+    text-decoration: none;
+    color: black;
+  }
 
 #mainRating{
     text-align: center
+}
+
+#mainReview {
+    background-color: rgba(256, 256, 256, 0.8);
+    width: 100%;
+    margin-bottom: 10vh;
+}
+
+#tags{
+    font-size: 30px
+}
+
+.userReview{
+    background-color: rgba(256, 256, 256, 1.0);
+    width: 100%;
+    padding-top: 45px;
+}
+
+.userReview p {
+    font-size: 21px;
 }

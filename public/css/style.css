@@ -14,6 +14,11 @@ body {
   background-size: cover;
 }
 
+#title{
+  text-decoration: none;
+  color: black;
+}
+
 #reviewTitle {
   background-color: cyan
 }
@@ -22,14 +27,18 @@ body {
   margin-bottom: 10vh;
 }
 
+#description p{
+  font-size: 24px;
+}
+
 .jumbotron {
-  background-color: rgba(256, 256, 256, 0.6);
+  background-color: rgba(256, 256, 256, 0.8);
   width: 100%;
   margin-bottom: 10vh;
 }
 
 #streets {
-  background-color: rgba(256, 256, 256, 0.60)
+  background-color: rgba(256, 256, 256, 0.8)
 }
 
 #separator {

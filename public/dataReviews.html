@@ -2,61 +2,124 @@
 <html lang="en">
 
 <head>
-  <!-- My css -->
-  <link rel="stylesheet" href="./css/reviews.css" <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css"
-    integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
-
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
+  <!-- My css -->
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/reviews.css"> <!-- Required meta tags -->
   <link rel="shortcut icon" type="image/png" href="./images/RoadRaterLogo.png" />
   <title>Reviews</title>
 </head>
 
 <body>
-    <div class="container" id="mainHead">
-        <div class="content-block dark parallax" id="header">
-            <div class="row justify-content-center" id="subHead">
-                <img src="./images/RoadRaterLogo.png" alt="Road Rater Logo" width="52px" height="52px">
-                <h1>Road Rater</h1>
-            </div>
-            <div class="row justify-content-center">
-                <a href="https://github.com/upcs/cs-341-project-sq19-delta">Github</a>
-            </div>
-        </div>
+  <div class="container" id="mainHead">
+    <div class="content-block dark parallax" id="header">
+      <div class="row justify-content-center" id="subHead">
+        <img id="logo" src="./images/RoadRaterLogo.png" alt="Road Rater Logo" width="104px" height="104px">
+        <h1 class="display-1"> <a href="index.html" id="title">Road Rater</a></h1>
+      </div>
     </div>
-    <br>
+  </div>
+  <br>
   <div class="container">
-      <div class="jumbotron">
-          <h3 class="display-4">Road Name</h3>
-        
-        <div class="row">
+    <div class="jumbotron" id="mainReview">
+      <div class="row justify-content-center">
+        <h3 class="display-3 justify-content-center">N GREELEY AVE</h3>
+      </div>
+      <br><br>
+      <div class="row">
         <div class="col-sm justify-content-left" id="mainRating">
-          <h3>Overall rating</h3>
-          <h1>5.9</h1>
+          <h1>Overall rating</h1>
+          <p class="display-4">4.9</p>
         </div>
         <div class="col">
-          <h3>Note about this road</h3>
-
+          <h1>Note about this road</h1>
+          <p id="tags">Smooth, Well-Kept</p>
         </div>
       </div>
-      </div>
+    </div>
     <div>
-
-
+      <ul class="list-group">
+        <li class="list-group-item userReview">
+          <div class="row">
+            <div class="col-md-2 display-4">5.0</div>
+            <div class="col-md-8">
+              <p> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. </p>
+            </div>
+            <div class="col-md-2 h3">
+              <h3 class="float-right">2/14/19</h3>
+              <p class="float-right">Daniel B.</p>
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item userReview">
+          <div class="row">
+            <div class="col-md-2 display-4">5.0</div>
+            <div class="col-md-8">
+              <p> Love me some national treasure. </p>
+            </div>
+            <div class="col-md-2 h3">
+              <h3 class="float-right">2/14/19</h3>
+              <p class="float-right">Nick Cage</p>
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item userReview">
+          <div class="row">
+            <div class="col-md-2 display-4">4.7</div>
+            <div class="col-md-8">
+              <p> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+            </div>
+            <div class="col-md-2 h3">
+              <h3 class="float-right">2/14/19</h3>
+              <p class="float-right">Andrew L.</p>
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item userReview">
+          <div class="row">
+            <div class="col-md-2 display-4">5.0</div>
+            <div class="col-md-8">
+              <p> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. </p>
+            </div>
+            <div class="col-md-2 h3">
+              <h3 class="float-right">2/14/19</h3>
+              <p class="float-right">Niraj M.</p>
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item userReview">
+          <div class="row">
+            <div class="col-md-2 display-4">4.3</div>
+            <div class="col-md-8">
+              <p> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. </p>
+            </div>
+            <div class="col-md-2 h3">
+              <h3 class="float-right">2/14/19</h3>
+              <p class="float-right">Daniel B.</p>
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item userReview">
+          <div class="row">
+            <div class="col-md-2 display-4">3.0</div>
+            <div class="col-md-8">
+              <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.Cras sit amet nibh us.</p>
+            </div>
+            <div class="col-md-2 h3">
+              <h3 class="float-right">2/14/19</h3>
+              <p class="float-right">Big Chungus</p>
+            </div>
+          </div>
+        </li>
+      </ul>
       <!-- Optional JavaScript -->
       <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js"
-        integrity="sha384-7aThvCh9TypR7fIc2HV4O/nFMVCBwyIUKL8XCtKE+8xgCgl/PQGuFsvShjr74PBp"
-        crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js" integrity="sha384-7aThvCh9TypR7fIc2HV4O/nFMVCBwyIUKL8XCtKE+8xgCgl/PQGuFsvShjr74PBp" crossorigin="anonymous"></script>
 </body>
 
 </html>
