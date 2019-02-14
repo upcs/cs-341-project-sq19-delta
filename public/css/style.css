@@ -1,3 +1,7 @@
-#mainHead{
-  background-color: blue
+body{
+  background-image: url(../images/homePhoto.jfif)
+}
+
+.jumbotron{
+  background-color: rgba(256, 256, 256, 0.75)
 }
