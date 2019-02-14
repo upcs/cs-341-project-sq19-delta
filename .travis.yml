@@ -8,5 +8,5 @@ install:
   - npm install -g jest
   - npm install -g babel-cli
   - npm install -g babel-preset-env
-  - npm install -g supertest
+  - npm install supertest --save-dev
   - npm install -g superagent
