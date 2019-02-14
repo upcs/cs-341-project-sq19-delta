@@ -5,7 +5,7 @@
 - Actually connect to a live database
 - Lots or fancy use of CSS
 
-**Minimum Specs Meet:**
+**Minimum Specs Met:**
 - An index page
 - Some use of CSS
 - A node server
@@ -17,18 +17,18 @@
 - Graceful error handling
 
 # Road Rater
-**What is it:** This is a web-app that will allow users to enter their own custom reviews for roads in the city of Portland. This will allow users to plan their routes to work, school or for a road trip which for example, could minimize ware and tear their car from taking roads without many potholes or for people with back pain, skipping roads that are quite bumpy.
+**What is it:** This is a web-app that will allow users to enter their own custom reviews for roads in the city of Portland. This will allow users to plan their routes to work, school or for a road trip which can help minimize ware and tear on their car by skipping bumpy roads.
 
 **Directory structure**
-- public/ - subfolderss for JavaScript, CS and Images; also contains all HTML files
+- public/ - subfolders for JavaScript, CS and Images; also contains all HTML files
 - tests/ - JavaScript for testing various functions
 - routes/ - JavaScript for database searching and making requests based on user entry
 
 **Members:**
-- Andrew Lang
-- Alex Weininger
-- Niraj Mali
-- Daniel Borg
+- [Andrew Lang](https://github.com/AndrewLang98)
+- [Alex Weininger](https://github.com/alexweininger)
+- [Niraj Mali](https://github.com/malin383)
+- [Daniel Borg](https://github.com/dborg291)
 
 Data Set:
 
