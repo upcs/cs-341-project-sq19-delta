@@ -33,3 +33,10 @@
 Data Set:
 
 [Portland Streets](https://gis-pdx.opendata.arcgis.com/datasets/ad5ed4193110452aac2d9485df3298e2_68?selectedAttribute=Shape_Length)
+
+# Installation/Setup
+
+1. Clone Repo
+2. `npm install`
+3. `npm start`
+4. Go to "localhost" in your browser
