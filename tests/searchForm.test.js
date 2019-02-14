@@ -12,23 +12,6 @@ describe('Test the root path', () => {
 	});
 });
 
-describe('Test the /roads path', () => {
-	test('It should response the POST method', done => {
-		request(app).post('/roads').then((response) => {
-			expect(response.statusCode).toBe(200);
-			done();
-		});
-	});
-
-	test('It should response the POST method', done => {
-		request(app).post('/roads').then((response) => {
-			expect(response.body).toBeDefined();
-			done();
-		});
-	});
-
-});
-
 describe('Test the / path', () => {
 	test('It should response the POST method', done => {
 		request(app).get('/').then((response) => {
