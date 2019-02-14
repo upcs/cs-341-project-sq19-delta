@@ -16,7 +16,7 @@
 - Test functions for each feature.
 - Graceful error handling
 
-# Road Rater ![alt text](https://github.com/upcs/cs-341-project-sq19-delta/blob/master/public/images/RoadRaterLogo.png "Logo")
+# Road Rater
 **What is it:** This is a web-app that will allow users to enter their own custom reviews for roads in the city of Portland. This will allow users to plan their routes to work, school or for a road trip which for example, could minimize ware and tear their car from taking roads without many potholes or for people with back pain, skipping roads that are quite bumpy.
 
 **Directory structure**
