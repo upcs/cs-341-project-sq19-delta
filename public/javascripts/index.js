@@ -22,12 +22,14 @@ function search() {
 			if (data.length == 0){
 				let emptyStr = '<p>Sorry, we found no search results</p>';
 				let emptyRoad = document.createElement('li');
+				emptyRoad.style = 'list-style-type: none;';
 				emptyRoad.classList.add('empty-road');
 				emptyRoad.innerHTML = emptyStr;
 				list.appendChild(emptyRoad);
 			}
 			for (let i = 0; i < data.length; i++){
 				let road = document.createElement('li');
+				road.style = 'list-style-type: none;';
 				// let roadbutton = document.createElement('button');
 				road.classList.add('road-list');
 				// roadbutton.classList.add('button-list');
