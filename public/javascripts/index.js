@@ -8,6 +8,7 @@ function search() {
 		xhr.send();
 		xhr.onload = function (response) {
 			console.log(response);
+			document.getElementById('information').innerHTML = this.responseText;
 			return response;
 		}
 	} else {
