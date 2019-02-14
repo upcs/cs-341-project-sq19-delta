@@ -1,7 +1,7 @@
 const request = require('supertest');
 const app = require('../app');
 
-// jest.setTimeout(100000);
+jest.setTimeout(100000);
 
 describe('Test the root path', () => {
 	test('It should response the GET method', done => {
@@ -10,6 +10,23 @@ describe('Test the root path', () => {
 			done();
 		});
 	});
+});
+
+describe('Test the /roads path', () => {
+	test('It should response the POST method', done => {
+		request(app).post('/roads').then((response) => {
+			expect(response.statusCode).toBe(200);
+			done();
+		});
+	});
+
+	test('It should response the POST method', done => {
+		request(app).post('/roads').then((response) => {
+			expect(response.body).toBeDefined();
+			done();
+		});
+	});
+
 });
 
 describe('Test the / path', () => {

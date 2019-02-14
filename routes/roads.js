@@ -17,6 +17,7 @@ router.post('/', jsonParser, function (req, res, next) {
 	console.log(req.originalUrl);
 	console.log(req.query.search);
 
+	res.send('ok');
 	if (req.query.search !== undefined) {
 		name = req.query.search;
 	}
@@ -50,6 +51,7 @@ router.post('/', jsonParser, function (req, res, next) {
 			}
 		});
 	});
+	con.end();
 });
 
 module.exports = router;
