@@ -1,3 +1,4 @@
 **/node_modules/
 /coverage
 /Building_Footprints.csv
+/db.json
