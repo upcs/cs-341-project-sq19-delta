@@ -4,7 +4,7 @@
   "description": "CS 341 Project - Team Delta",
   "main": "index.js",
   "scripts": {
-    "test": "jest && codecov",
+    "test": "jest --detectOpenHandles --forceExit && codecov",
     "start": "node ./bin/www"
   },
   "repository": {
@@ -22,25 +22,31 @@
   },
   "homepage": "https://github.com/upcs/cs-341-project-sq19-delta#readme",
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
     "codecov": "^3.1.0",
-    "jest": "^23.6.0"
+    "jest": "^23.6.0",
+    "superagent": "^4.1.0",
+    "supertest": "^3.4.2"
   },
   "jest": {
     "coverageDirectory": "./coverage/",
     "collectCoverage": true
   },
   "dependencies": {
+    "body-parser": "^1.18.3",
     "codecov": "^3.1.0",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
     "express": "~4.16.0",
     "http-errors": "~1.6.2",
     "jade": "~1.11.0",
-    "jest": "^23.6.0",
     "jscoverage": "^0.6.0",
     "morgan": "~1.9.0",
     "mysql": "^2.16.0",
+    "nock": "^10.0.6",
     "nodeunit": "^0.11.3",
-    "tap": "^12.5.1"
+    "tap": "^12.5.1",
+    "xmlhttprequest": "^1.8.0"
   }
 }
