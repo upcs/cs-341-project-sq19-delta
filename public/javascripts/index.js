@@ -18,25 +18,30 @@ function search() {
 			let data = JSON.parse(this.responseText);
 
 			let list = document.createElement('ul');
+			list.style = 'padding: 0; margin: 0;';
 
 			if (data.length == 0) {
 				let emptyStr = '<p>Sorry, we found no search results</p>';
 				let emptyRoad = document.createElement('li');
-				emptyRoad.style = 'list-style-type: none;';
+				emptyRoad.style = 'list-style-type: none; ';
 				emptyRoad.classList.add('empty-road');
 				emptyRoad.innerHTML = emptyStr;
 				list.appendChild(emptyRoad);
 			}
 			for (let i = 0; i < data.length; i++) {
 				let road = document.createElement('li');
-				road.style = 'list-style-type: none; margin-bottom: 1vh;';
+				if (i == data.length - 1)
+					road.style = 'list-style-type: none; margin: 0; padding: 0;';
+				else
+					road.style = 'list-style-type: none; margin: 0; padding: 0; margin-bottom: 1vh;';
 				road.classList.add('road-list');
 				let str = `
-				<div class="card text-white bg-dark mb-3" style="width: 70vw;">
+				<div class="card bg-light mb-3" style="width: 100%;">
 				<div class="card-header">${(Math.random() * (i + 5)).toFixed(1)} miles away</div>
 					<div class="card-body">
-						<h5 class="card-title">${data[i]['FULL_NAME']} ${data[i]['LEFTZIP']}</h5>
-				  		<a href= "/dataReviews.html" class="btn btn-light">Rate Road</a>
+						<h5 class="card-title">${data[i]['FULL_NAME']} ${data[i]['LEFTZIP']}
+							<a href= "/dataReviews.html" class="btn btn-primary float-right" >Rate Road</a>
+						</h5>
 					</div>
 			  	</div>`;
 				road.innerHTML = str;
@@ -44,6 +49,8 @@ function search() {
 			}
 			document.getElementById('information').innerHTML = '';
 			document.getElementById('information').appendChild(list);
+			document.getElementById('results-card').style = 'display: inherit';
+			document.getElementById('results-title').innerHTML = `Showing ${data.length} of ${data.length} results.`;
 			return response;
 		}
 	} else {

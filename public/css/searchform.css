@@ -1,3 +1,12 @@
+html,
+body {
+  background: url(../images/homePhoto.jfif) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 #bigcolumn {
     text-align: center;
 }
@@ -40,7 +49,11 @@ p.lead {
     text-align: center;
 }
 
-.Rode-Search-Header {
-    width: 70vh;
+div#information {
+    background-color: rgba(256, 256, 256, 0.8);
+    padding: 15px;
+}
 
+#results-card {
+    display: none;
 }
