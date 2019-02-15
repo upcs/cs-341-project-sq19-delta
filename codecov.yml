@@ -15,7 +15,7 @@ coverage:
 ignore:
   - "/build/routes/roads.js"
   - "./build/routes/reviews.js"
-  - "../build/routes/addReview.js"
+  - "./build/routes/addReview.js"
 
 parsers:
   gcov:
