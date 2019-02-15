@@ -2,3 +2,5 @@
 /coverage
 /db.json
 **/build/
+build/
+build
