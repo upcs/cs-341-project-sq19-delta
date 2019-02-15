@@ -1,4 +1,4 @@
-![codecov](https://img.shields.io/codecov/c/github/upcs/cs-341-project-sq19-delta/master.svg?style=flat-square) ![build](https://img.shields.io/travis/com/upcs/cs-341-project-sq19-delta.svg?style=flat-square) ![](https://img.shields.io/node/v/express.svg?style=flat-square)
+![codecov](https://img.shields.io/codecov/c/github/upcs/cs-341-project-sq19-delta/master.svg?style=flat-square) ![build](https://img.shields.io/travis/com/upcs/cs-341-project-sq19-delta.svg?style=flat-square) ![](https://img.shields.io/node/v/express.svg?style=flat-square) [![HitCount](http://hits.dwyl.io/upcs/cs-341-project-sq19-delta.svg)](http://hits.dwyl.io/upcs/cs-341-project-sq19-delta)
 
 # cs-341-project-sq19-delta | RoadRater
 **Additional Work / Features:**
