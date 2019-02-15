@@ -13,7 +13,7 @@ coverage:
     patch: yes
     changes: no
 ignore:
-  - "/build/routes/roads.js"
+  - "./build/routes/roads.js"
   - "./build/routes/reviews.js"
   - "./build/routes/addReview.js"
 
