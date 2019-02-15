@@ -8,7 +8,7 @@
     "start": "node ./build/bin/www",
     "tsc": "tsc",
     "dev": "cd tools/ && dev.bat && cd .. && ts-node-dev --respawn --transpileOnly app/bin/www.ts",
-    "prod": "tsc && node ./build/bin/www"
+    "prod": "cd tools/ && dev.bat && cd .. && tsc && node ./build/bin/www"
   },
   "repository": {
     "type": "git",
