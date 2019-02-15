@@ -1,0 +1,55 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
+
+html,
+body {
+  background: url(../images/homePhoto.jfif) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#title{
+  text-decoration: none;
+  color: black;
+}
+
+#reviewTitle {
+  background-color: cyan
+}
+
+#mainHead {
+  margin-bottom: 10vh;
+}
+
+#description p{
+  font-size: 24px;
+}
+
+.jumbotron {
+  background-color: rgba(256, 256, 256, 0.8);
+  width: 100%;
+  margin-bottom: 10vh;
+}
+
+#streets {
+  background-color: rgba(256, 256, 256, 0.8)
+}
+
+#separator {
+  opacity: 0.0
+}
+
+#cardTitles {
+  color: #0055ff
+}
+
+
+#logo {
+  margin-top: 15px;
+}
