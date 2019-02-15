@@ -21,12 +21,12 @@ describe('Test the /roads path', () => {
 		});
 	});
 
-	// test('It should responde OK when providing a search value', done => {
-	// 	request(app).post('/roads/?search=Strong').then((response) => {
-	// 		expect(response.body).toBeDefined();
-	// 		done();
-	// 	});
-	// });
+	test('It should responde OK when providing a search value', done => {
+		request(app).post('/roads/?search=Strong').then((response) => {
+			expect(response.body).toBeDefined();
+			done();
+		});
+	});
 
 });
 
@@ -43,6 +43,25 @@ describe('Test the /nirajmali path', () => {
 	test('Should return 404', done => {
 		request(app).get('/nirajmali').then((response) => {
 			expect(response.statusCode).toBe(404);
+			done();
+		});
+	});
+});
+
+describe('Test the /reviews path', () => {
+	test('Should return 200', done => {
+		request(app).get('/add-review').then((response) => {
+			expect(response.statusCode).toBeDefined();
+			done();
+		});
+	});
+});
+
+
+describe('Test the /reviews path', () => {
+	test('Should return 200', done => {
+		request(app).get('/add-review').then((response) => {
+			expect(response.statusCode).toBeDefined();
 			done();
 		});
 	});
