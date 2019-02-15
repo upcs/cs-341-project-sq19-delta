@@ -1,6 +1,4 @@
 **/node_modules/
 /coverage
 /db.json
-**/build/
-build/
-build
+/build
