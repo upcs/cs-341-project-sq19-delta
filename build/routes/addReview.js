@@ -10,6 +10,21 @@ var request_1 = __importDefault(require("request"));
 // create application/json parser
 var jsonParser = bodyParser.json();
 router.use(bodyParser.json());
+var example = {
+    roads: [
+        {
+            name: "Willamette",
+            zip: "97203",
+            ratings: [
+                {
+                    user: "Alex",
+                    rating: "5",
+                    text: "this road is nice"
+                }
+            ]
+        }
+    ]
+};
 /* GET users listing. */
 router.get("/", function (req, res, next) {
     var db = require("../../db.json");
@@ -32,7 +47,7 @@ router.get("/", function (req, res, next) {
             console.log(info);
             console.log("reviews " + JSON.stringify(info.reviews));
             var review = { "street-name": "Van Houten", rating: "4" };
-            console.log('review: ' + JSON.stringify(review));
+            console.log("review: " + JSON.stringify(review));
             info.reviews.push(review);
             var opt = {
                 url: "https://api.jsonbin.io/b/" + id,
@@ -53,7 +68,7 @@ router.get("/", function (req, res, next) {
                 else {
                     console.log(response.statusCode);
                     console.log(response.body);
-                    res.render('error');
+                    res.render("error");
                 }
             });
         }

@@ -21,12 +21,12 @@ describe('Test the /roads path', () => {
 		});
 	});
 
-	test('It should responde OK when providing a search value', done => {
-		request(app).post('/roads/?search=Strong').then((response) => {
-			expect(response.body).toBeDefined();
-			done();
-		});
-	});
+	// test('It should responde OK when providing a search value', done => {
+	// 	request(app).post('/roads/?search=Strong').then((response) => {
+	// 		expect(response.body).toBeDefined();
+	// 		done();
+	// 	});
+	// });
 
 });
 
