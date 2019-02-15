@@ -7,7 +7,7 @@
     "test": "jest --detectOpenHandles --forceExit && codecov",
     "start": "node ./build/bin/www",
     "tsc": "tsc",
-    "dev": "ts-node-dev --respawn --transpileOnly ./app/app.ts",
+    "dev": "cd tools/ && dev.bat && cd .. && ts-node-dev --respawn --transpileOnly app/bin/www.ts",
     "prod": "tsc && node ./build/bin/www"
   },
   "repository": {
@@ -57,6 +57,7 @@
     "pug": "^2.0.3",
     "request": "^2.88.0",
     "tap": "^12.5.1",
+    "ts-node": "^8.0.2",
     "ts-node-dev": "^1.0.0-pre.32",
     "typescript": "^3.3.3",
     "xmlhttprequest": "^1.8.0"
