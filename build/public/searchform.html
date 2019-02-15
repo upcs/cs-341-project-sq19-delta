@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/searchform.css" />
+    <title>Find Street</title>
+    <script src="./javascripts/index.js"></script>
+</head>
+
+<body>
+    <br>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-12">
+                <div class="jumbotron Rode-Search-Header">
+                    <h1 class="display-4">Search for a Road</h1>
+                    <p class="lead">Simply type in a street name and choose to rate it</p>
+                    <div class="row justify-content-center">
+                        <form onsubmit="search(); return false;">
+                            <div class="input-group mb-3">
+                                <input id="street-name" type="text" class="form-control form-control-lg" placeholder="Street name" aria-label="Street name" aria-describedby="button-addon2">
+                                <div class="input-group-append">
+                                    <button class="btn btn-primary" type="button" id="search-button" onclick="search()">Search</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center adjustdown">
+            <div class="col-xl-12">
+                <div id="results-card" class="card">
+                    <div class="card-body">
+                        <h5 id="results-title" class="card-title"></h5>
+                        <div id="information"></div>
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination justify-content-center">
+                                <li class="page-item disabled">
+                                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item disabled"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item disabled"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item disabled">
+                                    <a class="page-link" href="#">Next</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

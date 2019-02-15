@@ -1,5 +1,6 @@
+
 const request = require('supertest');
-const app = require('../app');
+const app = require('../build/app');
 
 // jest.setTimeout(100000);
 
@@ -42,6 +43,25 @@ describe('Test the /nirajmali path', () => {
 	test('Should return 404', done => {
 		request(app).get('/nirajmali').then((response) => {
 			expect(response.statusCode).toBe(404);
+			done();
+		});
+	});
+});
+
+describe('Test the /reviews path', () => {
+	test('Should return 200', done => {
+		request(app).get('/add-review').then((response) => {
+			expect(response.statusCode).toBeDefined();
+			done();
+		});
+	});
+});
+
+
+describe('Test the /reviews path', () => {
+	test('Should return 200', done => {
+		request(app).get('/add-review').then((response) => {
+			expect(response.statusCode).toBeDefined();
 			done();
 		});
 	});

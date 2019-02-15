@@ -1,0 +1,59 @@
+html,
+body {
+  background: url(../images/homePhoto.jfif) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#bigcolumn {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+button.btin {
+    background: none;
+    border-width: 2px;
+    border-color: black;
+    border-radius: 3px;
+    border-style: solid;
+}
+
+button.btin:hover {
+    color: white;
+    background: black;
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+@keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+  }
+
+.map-container {
+    background-color: gray;
+    height: 50vh;
+    width: 50vw;
+}
+
+div.row.adjustdown {
+    margin-bottom: 5vh;
+}
+
+p.lead {
+    text-align: center;
+}
+
+div#information {
+    background-color: rgba(256, 256, 256, 0.8);
+    padding: 15px;
+}
+
+#results-card {
+    display: none;
+}
