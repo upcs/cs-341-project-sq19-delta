@@ -1,13 +1,12 @@
 "use strict";
 
-import { Request, Response, NextFunction } from "express";
-import { Options } from "request";
+import { NextFunction, Request, Response } from "express";
+import request, { Options } from "request";
 
 var express = require("express");
 var router = express.Router();
 var bodyParser = require("body-parser");
 
-import request from "request";
 // create application/json parser
 var jsonParser = bodyParser.json();
 router.use(bodyParser.json());
